@@ -1,0 +1,106 @@
+ 
+.testimonial{
+    text-align: center;
+    margin: 0 20px;
+}
+.testimonial .description{
+    padding: 50px 30px 30px 30px;
+    margin-bottom: 50px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: left;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    position: relative;
+}
+.testimonial .description:before{
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    float: left;
+    padding: 0 15px 5px 0;
+    font-size: 30px;
+    color: #cd493a;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+.testimonial .description:after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+}
+.testimonial .testimonial-content{ position: relative; }
+.testimonial .testimonial-content:before{
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #ffffff;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+}
+.testimonial .testimonial-content:after{
+    content: "";
+    width: 2px;
+    height: 40px;
+    background: #ffffff;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: skewX(-45deg);
+    transform-origin: 100% 100% 0;
+}
+.testimonial .pic{
+    display: inline-block;
+    width: 60px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 30px;
+    background-color: #ffffff;
+    border-radius: 30px 0px 0px 0px;
+    border-left: 10px solid #cd493a;
+    border-top: 10px solid #cd493a;
+    margin: 10px;
+    overflow: hidden;
+    color: #cd493a;
+    font-weight: 900;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.testimonial .title{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #05202a;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.owl-theme .owl-controls{
+    margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 15px;
+    height: 10px;
+    border-radius: 0;
+    background: #cd493a;
+    opacity: 0.8;
+    transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    width: 35px;
+    background: #05202a;
+}
