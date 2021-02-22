@@ -7,12 +7,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>owl.theme.default.min.css">
-    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>animate.css">
-    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>navigation.css">
-    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>rangeslider.css">
-    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>style.css">
-    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>responsive.css">
+    <link rel="stylesheet" href="<?php echo scriptcss($path = "", $type = "fe");  ?>filename.min.css">
+
 </head>

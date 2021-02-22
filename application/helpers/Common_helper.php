@@ -40,6 +40,11 @@ function frontendViewFolder()
     return "fe/";
 }
 
+function frontendSubPagesViewFolder()
+{
+    return "fe/sub-page-main";
+}
+
 function backendViewFolder()
 {
     return "be/";
@@ -176,10 +181,11 @@ function statusButtons($type = NULL, $label = NULL, $url = NULL, $event = "")
     return $button;
 }
 
-function actionDropdown($buttons = array())
+function actionDropdown($buttons = array(), $btn_icon = "", $btn_color = "primary")
 {
+    $btn_icon = ($btn_icon != "") ? $btn_icon : "icon-settings";
     $button = '<div class="btn-group mb-2 mr-2">
-                <button class="btn drp-icon btn-rounded btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
+                <button class="btn drp-icon btn-rounded btn-' . $btn_color . ' dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather ' . $btn_icon . '"></i></button>
                     <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -151px, 0px); top: 0px; left: 0px; will-change: transform;">';
     foreach ($buttons as $b) {
         $href = (isset($b['url']) && $b['url'] != "") ? $b['url'] : "javascript:void(0)";
@@ -228,4 +234,21 @@ function generateHTMLTable()
 
     $ci->table->set_template($template);
 }
+
+function dropdownCommon($type = NULL)
+{
+    $dropdown = [];
+    switch ($type) {
+        case 'status':
+            $dropdown = ['' => 'Choose Status', '0' => 'Inactive', '1' => 'Active'];
+            break;
+
+        default:
+            $dropdown = [];
+            break;
+    }
+
+    return $dropdown;
+}
+
 /* End of file common.php */

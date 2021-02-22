@@ -49,7 +49,7 @@
                         <div class="page-wrapper">
                             <!-- [ Main Content ] start -->
                             <!-- [ sample-page ] start -->
-                            <?php if (isset($page) && $page != "" && file_exists(APPPATH . "views/pages/" . $page . ".php") === TRUE) {
+                            <?php if (isset($page) && $page != "" && file_exists(APPPATH . "views/" . backendViewFolder() . "body-pages/" . $page . ".php") === TRUE) {
                                 $this->load->view(backendViewFolder() . 'body-pages/' . $page, $data, FALSE);
                             } else {
                                 echo "<h1 class=\"text-center\">PAGE NOT FOUND</h1>";

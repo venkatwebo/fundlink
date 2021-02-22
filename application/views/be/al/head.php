@@ -22,6 +22,12 @@
   <link rel="stylesheet" href="<?php echo scriptfonts(); ?>fontawesome/css/fontawesome-all.min.css" />
   <!-- animation css -->
   <link rel="stylesheet" href="<?php echo scriptplugins(); ?>animation/css/animate.min.css" />
+  <!-- Notification css -->
+  <link href="<?php echo scriptplugins('notification/css/notification.min.css'); ?>" rel="stylesheet">
+  <!-- modal-window-effects css -->
+  <link rel="stylesheet" href="<?php echo scriptplugins("modal-window-effects/css/md-modal.css") ?>" />
+  <!-- data tables css -->
+  <link rel="stylesheet" href="<?php echo scriptplugins('data-tables/css/datatables.min.css'); ?>" />
   <!-- vendor css -->
   <link rel="stylesheet" href="<?php echo scriptcss(); ?>style.css" />
 
